@@ -1,6 +1,5 @@
-import { Search } from "lucide-react"
-import { InputControl, InputPrefix, InputRoot } from "./components/Input2"
 import { ImageCep } from "./assets/svg/ImageCep"
+import { Search } from "./assets/svg/Search"
 import { Input } from "./components/Input"
 
 function App() {
@@ -9,21 +8,42 @@ function App() {
 			<div className="flex flex-col items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				{/* search cep */}
 				<div className="min-w-[600px]">
-					<InputRoot>
-						<InputPrefix>
-							<Search className="h-6 w-6 text-[#F7F7FA]" />
-						</InputPrefix>
-						<InputControl placeholder="Digite seu CEP" />
-					</InputRoot>
+					<div className="relative">
+						<div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+							<Search />
+						</div>
+						<Input type="text"
+							className="block w-full sm:max-w-xl ps-12  text-[#F7F7FA] border-2 border-[#29E0A9] bg-[#302B63] rounded-full focus:ring-blue-500focus:border-blue-500"
+							placeholder="Digite seu CEP..."
+						//    value={search}
+						//    onChange={(e) => setSearch(e.target.value)}
+						/>
+					</div>
 				</div>
 
 				{/* inputs logradouros */}
-				<div className="flex mt-14 justify-between">
-					<div className="flex justify-end min-w-80 flex-col gap-6 mb-6">
-						<Input label="Cidade" className="bg-[#302B63] border-2 border-[#9956F6] shadow-sm" />
-						<Input label="Bairro" className="bg-[#302B63] border-2 border-[#9956F6] shadow-sm" />
-						<Input label="Logradouro" className="bg-[#302B63] border-2 border-[#9956F6] shadow-sm" />
-						<Input label="Complemento" className="bg-[#302B63] border-2 border-[#9956F6] shadow-sm" />
+				<div className="flex mt-10">
+					<div className="flex justify-center min-w-80 flex-col gap-6">
+						<Input
+							type="text"
+							placeholder="Cidade"
+							className="bg-[#302B63] border-2 border-[#9956F6] shadow-sm"
+						/>
+						<Input
+							type="text"
+							placeholder="Bairro"
+							className="bg-[#302B63] border-2 border-[#9956F6] shadow-sm"
+						/>
+						<Input
+							type="text"
+							placeholder="Logradouro"
+							className="bg-[#302B63] border-2 border-[#9956F6] shadow-sm"
+						/>
+						<Input
+							type="text"
+							placeholder="Complemento"
+							className="bg-[#302B63] border-2 border-[#9956F6] shadow-sm"
+						/>
 					</div>
 					<div className="flex-1 p-2">
 						<ImageCep />
