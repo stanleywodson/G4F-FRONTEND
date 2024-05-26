@@ -14,6 +14,9 @@ const LayoutProject = ({ children }: PropsWithChildren) => {
 						</div>
 					</div>
 				</div>
+				<div className="text-zinc-400 text-3xl ml-10 mt-4 font-medium">
+					Consulta CEP
+				</div>
 			</nav>
 			{children}
 		</main>
