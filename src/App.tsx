@@ -5,10 +5,9 @@ import { Input } from "./components/Input"
 function App() {
 	return (
 		<div className="flex items-center h-screen bg-gradient-to-tr from-[#302B63] to-[#24243E]">
-			<div className="flex flex-col items-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+			<div className="flex flex-col items-center w-auto mx-auto"> 
 				{/* search cep */}
-				<div className="min-w-[600px]">
-					<div className="relative">
+					<div className="relative min-w-[600px]">
 						<div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
 							<Search />
 						</div>
@@ -19,11 +18,10 @@ function App() {
 						//    onChange={(e) => setSearch(e.target.value)}
 						/>
 					</div>
-				</div>
 
 				{/* inputs logradouros */}
-				<div className="flex mt-10">
-					<div className="flex justify-center min-w-80 flex-col gap-6">
+				<div className="flex mt-10 gap-6">
+					<div className="flex justify-center min-w-96 flex-col gap-6">
 						<Input
 							type="text"
 							placeholder="Cidade"
