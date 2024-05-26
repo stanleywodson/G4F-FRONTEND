@@ -1,12 +1,14 @@
+import LayoutProject from "./Layout/LayoutProject"
 import { ImageCep } from "./assets/svg/ImageCep"
 import { Search } from "./assets/svg/Search"
 import { Input } from "./components/Input"
 
 function App() {
 	return (
-		<div className="flex items-center h-screen bg-gradient-to-tr from-[#302B63] to-[#24243E]">
-			<div className="flex flex-col items-center w-auto mx-auto"> 
-				{/* search cep */}
+		<LayoutProject>
+			<div className="flex items-center h-screen bg-gradient-to-tr from-[#302B63] to-[#24243E]">
+				<div className="flex flex-col items-center w-auto mx-auto">
+					{/* search cep */}
 					<div className="relative min-w-[600px]">
 						<div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
 							<Search />
@@ -14,43 +16,45 @@ function App() {
 						<Input type="text"
 							className="block w-full ps-12 text-[#F7F7FA] border-2 border-[#29E0A9] bg-[#302B63] rounded-full"
 							placeholder="Digite seu CEP..."
-							// helperText="O campo cidade é obrigatório!"
+						// helperText="O campo cidade é obrigatório!"
 						//    value={search}
 						//    onChange={(e) => setSearch(e.target.value)}
 						/>
 					</div>
 
-				{/* inputs logradouros */}
-				<div className="flex mt-10 gap-6">
-					<div className="flex justify-center min-w-96 flex-col gap-6">
-						<Input
-							type="text"
-							placeholder="Cidade"
-							className="bg-[#302B63] border-2 border-[#9956F6]"
-							helperText="O campo cidade é obrigatório!"
-						/>
-						<Input
-							type="text"
-							placeholder="Bairro"
-							className="bg-[#302B63] border-2 border-[#9956F6]"
-						/>
-						<Input
-							type="text"
-							placeholder="Logradouro"
-							className="bg-[#302B63] border-2 border-[#9956F6]"
-						/>
-						<Input
-							type="text"
-							placeholder="Complemento"
-							className="bg-[#302B63] border-2 border-[#9956F6]"
-						/>
-					</div>
-					<div className="flex-1 p-2">
-						<ImageCep />
+					{/* inputs logradouros */}
+					<div className="flex mt-10 gap-6">
+						<div className="flex justify-center min-w-96 flex-col gap-6">
+							<Input
+								type="text"
+								placeholder="Cidade"
+								className="bg-[#302B63] border-2 border-[#9956F6]"
+								helperText="O campo cidade é obrigatório!"
+							/>
+							<Input
+								type="text"
+								placeholder="Bairro"
+								className="bg-[#302B63] border-2 border-[#9956F6]"
+							/>
+							<Input
+								type="text"
+								placeholder="Logradouro"
+								className="bg-[#302B63] border-2 border-[#9956F6]"
+							/>
+							<Input
+								type="text"
+								placeholder="Complemento"
+								className="bg-[#302B63] border-2 border-[#9956F6]"
+							/>
+						</div>
+						<div className="flex-1 p-2">
+							<ImageCep />
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</LayoutProject>
+
 	)
 }
 
