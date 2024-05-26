@@ -12,8 +12,9 @@ function App() {
 							<Search />
 						</div>
 						<Input type="text"
-							className="block w-full sm:max-w-xl ps-12  text-[#F7F7FA] border-2 border-[#29E0A9] bg-[#302B63] rounded-full focus:ring-blue-500focus:border-blue-500"
+							className="block w-full ps-12 text-[#F7F7FA] border-2 border-[#29E0A9] bg-[#302B63] rounded-full"
 							placeholder="Digite seu CEP..."
+							// helperText="O campo cidade é obrigatório!"
 						//    value={search}
 						//    onChange={(e) => setSearch(e.target.value)}
 						/>
@@ -25,22 +26,23 @@ function App() {
 						<Input
 							type="text"
 							placeholder="Cidade"
-							className="bg-[#302B63] border-2 border-[#9956F6] shadow-sm"
+							className="bg-[#302B63] border-2 border-[#9956F6]"
+							helperText="O campo cidade é obrigatório!"
 						/>
 						<Input
 							type="text"
 							placeholder="Bairro"
-							className="bg-[#302B63] border-2 border-[#9956F6] shadow-sm"
+							className="bg-[#302B63] border-2 border-[#9956F6]"
 						/>
 						<Input
 							type="text"
 							placeholder="Logradouro"
-							className="bg-[#302B63] border-2 border-[#9956F6] shadow-sm"
+							className="bg-[#302B63] border-2 border-[#9956F6]"
 						/>
 						<Input
 							type="text"
 							placeholder="Complemento"
-							className="bg-[#302B63] border-2 border-[#9956F6] shadow-sm"
+							className="bg-[#302B63] border-2 border-[#9956F6]"
 						/>
 					</div>
 					<div className="flex-1 p-2">

@@ -3,7 +3,7 @@ import { InputHTMLAttributes, forwardRef, useId } from "react"
 type InputProps = InputHTMLAttributes<HTMLInputElement> & {
 	label?: string
 	helperText?: string
-	className?:string
+	className?: string
 }
 
 
@@ -21,7 +21,7 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
 					ref={ref}
 					{...props}
 				/>
-				{helperText && <p className="text-black text-xs mt-1">{helperText}</p>}
+				<p className="text-red-600 mt-1 ml-3 h-4">{helperText || '\u00A0'}</p>
 			</div>
 		)
 	}

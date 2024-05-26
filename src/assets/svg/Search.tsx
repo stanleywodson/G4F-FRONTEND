@@ -1,5 +1,5 @@
 export function Search() {
-	return <svg className="w-6 h-6 text-[#F7F7FA] mt-2 ml-1"
+	return <svg className="w-6 h-6 text-[#F7F7FA] mb-2.5 ml-1"
 		xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
 		strokeWidth={1.5}
 		stroke="currentColor">
