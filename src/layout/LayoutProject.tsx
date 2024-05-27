@@ -28,7 +28,11 @@ const LayoutProject = ({ children, subtitle }: PropsWithChildren<SubTitleProp>) 
 					<p>{subtitle}</p>
 				</div>
 			</nav>
-			{children}
+			<div>
+				<main>
+					{children}
+				</main>
+			</div>
 		</main>
 	)
 }
