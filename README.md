@@ -25,6 +25,21 @@ Para utilizar sem docker remova node_modules caso haja
 ```sh
 rm -rf node_modules/
 ```
+
+comente o objeto server vite.config.ts que está localizado na raiz do projeto
+```sh
+	server: {
+		hmr: {
+			host: 'localhost'
+		},
+		host: true,
+		port: 3000,
+		watch: {
+			usePolling: true
+		}
+	}
+```
+
 excute:
 ```sh
 npm install
