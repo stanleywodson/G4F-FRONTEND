@@ -9,7 +9,7 @@ export function Cep() {
 
 	return (
 		<LayoutProject subtitle="Consultar Cep">
-			<div className="flex items-center h-screen bg-gradient-to-tr from-[#302B63] to-[#24243E]">
+			<div className="flex items-center h-screen">
 				<div className="flex flex-col items-center w-auto mx-auto">
 					{/* search cep */}
 					<div className="relative min-w-[600px]">
@@ -38,7 +38,7 @@ export function Cep() {
 							<Input
 								label="Bairro"
 								type="text"
-								placeholder="Bairro"
+								// placeholder="Bairro"
 								className="bg-[#302B63] border-2 border-[#9956F6]"
 								{...register('address.district')}
 								helperText={`${errors.address?.district ? errors.address?.district.message : ''}`}
@@ -46,7 +46,7 @@ export function Cep() {
 							<Input
 								label="Logradouro"
 								type="text"
-								placeholder="Logradouro"
+								// placeholder="Logradouro"
 								className="bg-[#302B63] border-2 border-[#9956F6]"
 								{...register('address.street')}
 								helperText={`${errors.address?.street ? errors.address?.street.message : ''}`}
