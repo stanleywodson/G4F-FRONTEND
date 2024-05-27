@@ -26,7 +26,7 @@ Para utilizar sem docker remova node_modules caso haja
 rm -rf node_modules/
 ```
 
-comente o objeto server vite.config.ts que está localizado na raiz do projeto
+comente o objeto server em vite.config.ts que está localizado na raiz do projeto
 ```sh
 	server: {
 		hmr: {
