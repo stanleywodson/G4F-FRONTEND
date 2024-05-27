@@ -25,7 +25,7 @@ export function Cep() {
 					</div>
 
 					{/* inputs logradouros */}
-					<div className="flex mt-10 gap-6">
+					<div className="flex mt-10 gap-40">
 						<div className="flex justify-center min-w-96 flex-col gap-6">
 							<Input
 								label="Cidade"

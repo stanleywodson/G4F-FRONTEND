@@ -85,8 +85,8 @@ export function News() {
 
    return (
       <LayoutProject subtitle="Notícias">
-         <div className="flex overflow-y-auto pb-20">
-            <div className="flex flex-col h-screen mt-40 w-full gap-6 items-center mx-auto">
+         <div className="flex">
+            <div className="flex flex-col overflow-hidden mt-40 w-full gap-6 items-center mx-auto">
                <div className="w-2/3 ">
                   <Input
                      label="Título"

@@ -24,7 +24,7 @@ const LayoutProject = ({ children, subtitle }: PropsWithChildren<SubTitleProp>) 
 						</ul>
 					</div>
 				</div>
-				<div className="text-zinc-400 text-3xl ml-10 mt-4 font-medium">
+				<div className="text-zinc-200 text-5xl ml-10 mt-4 font-medium">
 					<p>{subtitle}</p>
 				</div>
 			</nav>
